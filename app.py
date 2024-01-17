@@ -2,6 +2,71 @@ import requests
 import base64
 import time
 import os
+import json
+import random
+
+
+# Define the races and attributes
+races = ['Elf', 'Dwarf', 'Human', 'Halfling']
+strength_levels = ['Weak', 'Moderate', 'Strong', 'Very Strong']
+dexterity_levels = ['Clumsy', 'Average', 'Agile', 'Very Agile']
+intelligence_levels = ['Slow', 'Average', 'Smart', 'Genius']
+wisdom_levels = ['Naive', 'Average', 'Experienced', 'Wise']
+charisma_levels = ['Unpleasant', 'Average', 'Friendly', 'Charismatic']
+
+# Randomly select one race and one value for each attribute
+character_race = random.choice(races)
+character_attributes = {
+    'Strength': random.choice(strength_levels),
+    'Dexterity': random.choice(dexterity_levels),
+    'Intelligence': random.choice(intelligence_levels),
+    'Wisdom': random.choice(wisdom_levels),
+    'Charisma': random.choice(charisma_levels)
+}
+
+# Create a character JSON
+character_json = {
+    'Race': character_race,
+    'Attributes': character_attributes
+}
+
+# Function to generate character lore using OpenAI's API
+def generate_character_lore(attributes):
+    openai_api_key = os.getenv('OPENAI_API_KEY')  # Ensure you have set your OpenAI API key in your environment variables
+    headers = {
+        'Authorization': f'Bearer {openai_api_key}',
+        'Content-Type': 'application/json'
+    }
+    prompt = f"Create a backstory for a character with the following attributes: {json.dumps(attributes, indent=4)}. Up to 5 sentences."
+    
+    data = {
+        'model': 'gpt-3.5-turbo',  # or another model you prefer
+        'messages': [
+            {"role": "system", "content": "You are a creative writer."},
+            {"role": "user", "content": prompt}
+        ],
+        'temperature': 1,
+        'max_tokens': 150  # Adjust as needed to control the length of the completion
+    }
+    
+    response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers, json=data)
+    if response.status_code == 200:
+        lore = response.json()['choices'][0]['message']['content']
+        return lore.strip()
+    else:
+        print(f"Failed to generate lore. Status code: {response.status_code}")
+        return None
+    
+
+# Generate the lore for the character
+character_lore = generate_character_lore(character_attributes)
+
+# Add the lore to the character JSON if it was successfully generated
+if character_lore:
+    character_json['Lore'] = character_lore
+
+# Print out the character JSON
+print(json.dumps(character_json, indent=4))
 
 # Scenario API credentials and setup
 api_key = 'api_MZwE8QRKRHyvL5SOPYItew'
@@ -23,7 +88,7 @@ headers = {
 payload = {
     'parameters': {
         'type': 'txt2img',
-        'prompt': 'dungeons and dragons female elf character',
+        'prompt': 'dungeons and dragons female dwarf character, portrait front facing, 16 pixel resolution design, game character',
         'numSamples': 1  # Set the number of images to generate to 1
     }
 }

@@ -281,27 +281,40 @@ def upload_to_pinata(local_file_path, jwt):
 # jwt = 'your_jwt_token_here'  # Replace with your actual JWT token
 jwt = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJiYWJiNGU3OC04ZmY1LTQyZGUtYmI4Mi0xZjdmMTQ4ZWFiYmIiLCJlbWFpbCI6Im1vcmVzaEBrb3JldGV4LmFpIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siaWQiOiJGUkExIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9LHsiaWQiOiJOWUMxIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZSwic3RhdHVzIjoiQUNUSVZFIn0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6ImU2ZmM3NmIwNzFmYzcwM2Q1NWI2Iiwic2NvcGVkS2V5U2VjcmV0IjoiMDk1MjUxMjYwMDRkMTA4OTg1ZGM2ZDBmMTVkZTJmZDY2YWQ0NDM3MWU1OWNlZjliZWI3MWU3MzFjZGNlMDhlOCIsImlhdCI6MTcwNTQ3NTExM30.KXx31l8frVOCgdBwSvzNBN728p8yg-ZiSFNUrpMwUdw'
 
-
 # Download the image from Scenario API
-local_image_path = download_image(image_url, 'local_image.png')
+local_image_path = download_image(image_url, 'assets/local_image.png')  # Save to assets folder
 if local_image_path:
-    # Upload the image to Pinata
-    pinata_response = upload_to_pinata(local_image_path, jwt)
-    if pinata_response:
-        # Get the IPFS hash and construct the URL
-        ipfs_hash = pinata_response['IpfsHash']
-        pinata_url = f"https://gateway.pinata.cloud/ipfs/{ipfs_hash}"
-        print(f"Image uploaded to Pinata: {pinata_url}")
+    print(f"Image downloaded to: {local_image_path}")
 
-        # Add the image URL to the character JSON
-        character_json['Image'] = pinata_url
+    # Add the local image path to the character JSON
+    character_json['Image'] = local_image_path
 
-        # Optionally, remove the local file after upload
-        os.remove(local_image_path)
-
-# # After generating the image and uploading to Pinata, add the image URL to the character_json
-# if 'pinata_url' in locals():  # Check if the image URL has been set
-#     character_json['Image'] = pinata_url
+    # Optionally, remove the local file after upload
+    # os.remove(local_image_path)  # This line can be removed as we now want to keep the image in assets folder
 
 # Print out the character JSON with the new structure
 print(json.dumps(character_json, indent=4))
+
+# Reformat the character_json to the desired output structure
+formatted_json = {
+    "name": character_json.get('Name', ''),
+    "symbol": "CHRONICLE",
+    "image": character_json.get('Image', '').split('/')[-1],  # Extract the filename
+    "description": character_json.get('Lore', ''),
+    "attributes": [
+        {"trait_type": key, "value": value}
+        for key, value in {**character_json['character_traits'], **character_json['pfp_traits']}.items()
+        if key != 'Image Background'  # Exclude 'Image Background' from attributes
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": character_json.get('Image', '').split('/')[-1],
+                "type": "image/png"
+            }
+        ]
+    }
+}
+
+# Print out the formatted JSON
+print(json.dumps(formatted_json, indent=4))

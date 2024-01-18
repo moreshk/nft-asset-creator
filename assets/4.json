@@ -1,0 +1,76 @@
+{
+    "name": "Grimbold Ironshield",
+    "symbol": "CHRONICLE",
+    "image": "4.png",
+    "description": "Grimbold Ironshield, a resilient Dwarf Paladin, is a veteran Soldier who has dedicated his life to protecting the innocent. Born and raised in a small mountain village, Grimbold was taught the ways of combat and honor from a young age. His unwavering loyalty and strong sense of justice led him to join a holy order of Paladins, where he honed his skills in both defense and healing. Despite his stern exterior, Grimbold's heart is filled with kindness and compassion, making him a formidable but compassionate champion of justice. With each battle won and every life saved, Grimbold's resolve to fight for what is right only grows stronger.",
+    "attributes": [
+        {
+            "trait_type": "Species",
+            "value": "Dwarf"
+        },
+        {
+            "trait_type": "Class",
+            "value": "Paladin"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Soldier"
+        },
+        {
+            "trait_type": "Alignment",
+            "value": "Neutral Good"
+        },
+        {
+            "trait_type": "Level",
+            "value": 10
+        },
+        {
+            "trait_type": "XP Bonus",
+            "value": 962
+        },
+        {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Hair Colour",
+            "value": "Red"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Fine Robes"
+        },
+        {
+            "trait_type": "Headpiece",
+            "value": "Crown/Tiara"
+        },
+        {
+            "trait_type": "Jewelery",
+            "value": "Earrings"
+        },
+        {
+            "trait_type": "Tattoos/Markings",
+            "value": "None"
+        },
+        {
+            "trait_type": "Eye Colour",
+            "value": "Green"
+        },
+        {
+            "trait_type": "Skin Colour",
+            "value": "Silver"
+        },
+        {
+            "trait_type": "Image Background",
+            "value": "Volcanic"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "4.png",
+                "type": "image/png"
+            }
+        ]
+    }
+}

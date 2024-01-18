@@ -1,0 +1,76 @@
+{
+    "name": "Aeranthal the Verdant Flame",
+    "symbol": "CHRONICLE",
+    "image": "0.png",
+    "description": "Aeranthal the Verdant Flame is a wise and powerful Dragonborn Druid who possesses a deep connection with nature. From a young age, she was raised by the Druidic order of the Emerald Grove, where she honed her abilities to manipulate the forces of the natural world. As an Acolyte, Aeranthal devoted herself to the study and worship of the ancient Elemental spirits, finding solace and guidance in their presence. Her alignment as Lawful Neutral reflects her unwavering commitment to maintaining balance and order within both the natural and supernatural realms. With her level 6 mastery and bonus XP of 511, Aeranthal stands ready to protect the delicate harmony of the world, wielding the raw power of fire and the gentle touch",
+    "attributes": [
+        {
+            "trait_type": "Species",
+            "value": "Dragonborn"
+        },
+        {
+            "trait_type": "Class",
+            "value": "Druid"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Acolyte"
+        },
+        {
+            "trait_type": "Alignment",
+            "value": "Lawful Neutral"
+        },
+        {
+            "trait_type": "Level",
+            "value": 6
+        },
+        {
+            "trait_type": "XP Bonus",
+            "value": 511
+        },
+        {
+            "trait_type": "Sex",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Hair Colour",
+            "value": "Green"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Leather Jacket"
+        },
+        {
+            "trait_type": "Headpiece",
+            "value": "Headdress"
+        },
+        {
+            "trait_type": "Jewelery",
+            "value": "Earrings"
+        },
+        {
+            "trait_type": "Tattoos/Markings",
+            "value": "Tattoos"
+        },
+        {
+            "trait_type": "Eye Colour",
+            "value": "Green"
+        },
+        {
+            "trait_type": "Skin Colour",
+            "value": "Fair"
+        },
+        {
+            "trait_type": "Image Background",
+            "value": "Desert"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ]
+    }
+}

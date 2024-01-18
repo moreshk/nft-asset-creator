@@ -1,0 +1,76 @@
+{
+    "name": "Thistlewick Hearthglow",
+    "symbol": "CHRONICLE",
+    "image": "1.png",
+    "description": "Thistlewick Hearthglow, a female gnome cleric, grew up in a small secluded village nestled deep within the forest. From a young age, she displayed an innate connection to the natural world and a deep sense of compassion. As an acolyte of the village's temple, Thistlewick dedicated herself to the worship of the forest deity, Naturesong. Under the guidance of the temple's sage, she honed her healing abilities and became well-versed in ancient rituals. However, her peaceful life was disrupted when a horde of undead creatures invaded her village, leaving destruction in their wake. Determined to protect her home and seek justice, Thistlewick embarked on a journey, vowing to restore balance to the land and bring",
+    "attributes": [
+        {
+            "trait_type": "Species",
+            "value": "Gnome"
+        },
+        {
+            "trait_type": "Class",
+            "value": "Cleric"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Acolyte"
+        },
+        {
+            "trait_type": "Alignment",
+            "value": "Neutral Good"
+        },
+        {
+            "trait_type": "Level",
+            "value": 8
+        },
+        {
+            "trait_type": "XP Bonus",
+            "value": 666
+        },
+        {
+            "trait_type": "Sex",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Hair Colour",
+            "value": "Gray"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Mage's Robes"
+        },
+        {
+            "trait_type": "Headpiece",
+            "value": "Coif"
+        },
+        {
+            "trait_type": "Jewelery",
+            "value": "Necklace"
+        },
+        {
+            "trait_type": "Tattoos/Markings",
+            "value": "None"
+        },
+        {
+            "trait_type": "Eye Colour",
+            "value": "Blue"
+        },
+        {
+            "trait_type": "Skin Colour",
+            "value": "Gold"
+        },
+        {
+            "trait_type": "Image Background",
+            "value": "Ruins"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "1.png",
+                "type": "image/png"
+            }
+        ]
+    }
+}

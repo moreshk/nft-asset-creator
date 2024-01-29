@@ -1,32 +1,32 @@
 {
-    "name": "Auric Melodius Sparklestrum",
+    "name": "Grimbold Ironfoot",
     "symbol": "CHRONICLE",
     "image": "0.png",
-    "description": "Auric Melodius Sparklestrum, a mischievous female gnome, was born into a family of traveling performers. As a child, she quickly learned the art of deception and entertainment. However, it was her innate musical talent that truly set her apart. Using her enchanting voice and captivating melodies, Auric would often mesmerize unsuspecting audiences, her silver tongue spinning tales of wonder and enchantment. With her trusty nightcap, which granted her soothing dreams, she set off on her own, eager to explore the world and share her music with all who would listen. Driven by a desire to bring joy and excitement to those she meets, Auric roams the land as a bard, embracing her chaotic good nature",
+    "description": "Grimbold Ironfoot, a female dwarf with fiery red hair, was born into a clan of skilled miners deep within the mountains. However, her adventurous spirit led her to dabble in the ways of the ranger, honing her skills in archery and survival. As an outlander, she grew up in isolation, learning to navigate the harsh wilderness that surrounded her clan's territory. Grimbold's chaotic neutral nature shuns conformity and authority, as she finds solace and freedom in the unpredictable nature of the wild. Armed with her trusty bow and a 1-inch cube trinket with painted sides, she embarks on daring quests, seeking both wealth and excitement, never settling for a mundane life within the confines of her clan's",
     "attributes": [
         {
             "trait_type": "Species",
-            "value": "Gnome"
+            "value": "Dwarf"
         },
         {
             "trait_type": "Class",
-            "value": "Bard"
+            "value": "Ranger"
         },
         {
             "trait_type": "Background",
-            "value": "Charlatan"
+            "value": "Outlander"
         },
         {
             "trait_type": "Alignment",
-            "value": "Chaotic Good"
+            "value": "Chaotic Neutral"
         },
         {
             "trait_type": "Gold",
-            "value": 10
+            "value": 60
         },
         {
             "trait_type": "Trinket",
-            "value": "A nightcap that, when worn, gives you pleasant dreams"
+            "value": "A 1-inch cube, each side painted a different color"
         },
         {
             "trait_type": "Sex",
@@ -34,23 +34,23 @@
         },
         {
             "trait_type": "Hair Colour",
-            "value": "Purple"
+            "value": "White"
         },
         {
             "trait_type": "Clothing",
-            "value": "Leather Armour"
+            "value": "Dark Magic Robes"
         },
         {
             "trait_type": "Headpiece",
-            "value": "Hat"
+            "value": "Cloak"
         },
         {
             "trait_type": "Skin Colour",
-            "value": "Amber"
+            "value": "Ebony"
         },
         {
             "trait_type": "Image Background",
-            "value": "Town centre"
+            "value": "Arctic Snow"
         }
     ],
     "properties": {

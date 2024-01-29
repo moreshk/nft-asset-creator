@@ -1,56 +1,56 @@
 {
-    "name": "Aeris Stormrider",
+    "name": "Thrumble Cragjaw",
     "symbol": "CHRONICLE",
     "image": "1.png",
-    "description": "Aeris Stormrider, a half-elf sorcerer, was born into a prestigious elven family. However, her mixed heritage made her an outcast among her own kind, leading her to embrace her sorcerous powers and dark inclinations. Raised with a strict military background, Aeris excelled as a soldier, utilizing her magic to devastating effect on the battlefield. Yet, her hunger for power led her down a path of deceit and manipulation, ultimately causing her to abandon her comrades in search of greater magical knowledge. In her travels, she stumbled upon a mysterious diary written in an unknown language, sparking her obsession with unlocking its secrets and furthering her own sinister ambitions.",
+    "description": "Thrumble Cragjaw, a charismatic gnome with wild, unkempt hair resembling the tangled branches of his forest home, spent his childhood among the creatures of the wilderness. One fateful day, he discovered an old divination card bearing his likeness, and it sparked a burning desire within him to uncover the secrets of his fate. Leaving behind his peaceful life as an Outlander, Thrumble ventured out into the world as a Barbarian, driven by his insatiable curiosity and a need to unlock the mysteries of the card's prophecy. With a heart full of chaotic good, Thrumble now roams the land, drawing strength from the untamed forces of nature, as he seeks to unravel the enigma that is his own destiny",
     "attributes": [
         {
             "trait_type": "Species",
-            "value": "Half-Elf"
+            "value": "Gnome"
         },
         {
             "trait_type": "Class",
-            "value": "Sorcerer"
+            "value": "Barbarian"
         },
         {
             "trait_type": "Background",
-            "value": "Soldier"
+            "value": "Outlander"
         },
         {
             "trait_type": "Alignment",
-            "value": "Lawful Evil"
+            "value": "Chaotic Good"
         },
         {
             "trait_type": "Gold",
-            "value": 15
+            "value": 25
         },
         {
             "trait_type": "Trinket",
-            "value": "A diary written in a language you don\u2019t know"
+            "value": "An old divination card bearing your likeness"
         },
         {
             "trait_type": "Sex",
-            "value": "Female"
+            "value": "Male"
         },
         {
             "trait_type": "Hair Colour",
-            "value": "Silver"
+            "value": "Blonde"
         },
         {
             "trait_type": "Clothing",
-            "value": "Plate Armour"
+            "value": "Padded Armor"
         },
         {
             "trait_type": "Headpiece",
-            "value": "Hat"
+            "value": "Jeweled Headband"
         },
         {
             "trait_type": "Skin Colour",
-            "value": "Amber"
+            "value": "Olive"
         },
         {
             "trait_type": "Image Background",
-            "value": "Plains"
+            "value": "Arctic Snow"
         }
     ],
     "properties": {

@@ -120,3 +120,7 @@ dmypy.json
 cython_debug/
 
 nft-asset/
+
+assets/
+old_assets/
+.DS_Store

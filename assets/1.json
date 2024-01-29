@@ -1,32 +1,32 @@
 {
-    "name": "Thistlewick Hearthglow",
+    "name": "Aeris Stormrider",
     "symbol": "CHRONICLE",
     "image": "1.png",
-    "description": "Thistlewick Hearthglow, a female gnome cleric, grew up in a small secluded village nestled deep within the forest. From a young age, she displayed an innate connection to the natural world and a deep sense of compassion. As an acolyte of the village's temple, Thistlewick dedicated herself to the worship of the forest deity, Naturesong. Under the guidance of the temple's sage, she honed her healing abilities and became well-versed in ancient rituals. However, her peaceful life was disrupted when a horde of undead creatures invaded her village, leaving destruction in their wake. Determined to protect her home and seek justice, Thistlewick embarked on a journey, vowing to restore balance to the land and bring",
+    "description": "Aeris Stormrider, a half-elf sorcerer, was born into a prestigious elven family. However, her mixed heritage made her an outcast among her own kind, leading her to embrace her sorcerous powers and dark inclinations. Raised with a strict military background, Aeris excelled as a soldier, utilizing her magic to devastating effect on the battlefield. Yet, her hunger for power led her down a path of deceit and manipulation, ultimately causing her to abandon her comrades in search of greater magical knowledge. In her travels, she stumbled upon a mysterious diary written in an unknown language, sparking her obsession with unlocking its secrets and furthering her own sinister ambitions.",
     "attributes": [
         {
             "trait_type": "Species",
-            "value": "Gnome"
+            "value": "Half-Elf"
         },
         {
             "trait_type": "Class",
-            "value": "Cleric"
+            "value": "Sorcerer"
         },
         {
             "trait_type": "Background",
-            "value": "Acolyte"
+            "value": "Soldier"
         },
         {
             "trait_type": "Alignment",
-            "value": "Neutral Good"
+            "value": "Lawful Evil"
         },
         {
-            "trait_type": "Level",
-            "value": 8
+            "trait_type": "Gold",
+            "value": 15
         },
         {
-            "trait_type": "XP Bonus",
-            "value": 666
+            "trait_type": "Trinket",
+            "value": "A diary written in a language you don\u2019t know"
         },
         {
             "trait_type": "Sex",
@@ -34,35 +34,23 @@
         },
         {
             "trait_type": "Hair Colour",
-            "value": "Gray"
+            "value": "Silver"
         },
         {
             "trait_type": "Clothing",
-            "value": "Mage's Robes"
+            "value": "Plate Armour"
         },
         {
             "trait_type": "Headpiece",
-            "value": "Coif"
-        },
-        {
-            "trait_type": "Jewelery",
-            "value": "Necklace"
-        },
-        {
-            "trait_type": "Tattoos/Markings",
-            "value": "None"
-        },
-        {
-            "trait_type": "Eye Colour",
-            "value": "Blue"
+            "value": "Hat"
         },
         {
             "trait_type": "Skin Colour",
-            "value": "Gold"
+            "value": "Amber"
         },
         {
             "trait_type": "Image Background",
-            "value": "Ruins"
+            "value": "Plains"
         }
     ],
     "properties": {

@@ -124,3 +124,6 @@ nft-asset/
 assets/
 old_assets/
 .DS_Store
+
+qc_files/
+renamed_assets/
